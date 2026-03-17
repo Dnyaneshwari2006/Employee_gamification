@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
+
+    <!-- Page Heading -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Project"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:background="@color/appcolor"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Project Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edittext_border"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Project Name"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Project Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edittext_border"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etProjectDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Project Description"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Created By (Dropdown) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edittext_border"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp">
+
+        <Spinner
+            android:id="@+id/spinnerCreatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Project Deadline -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edittext_border"
+        android:padding="4dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etProjectDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Project Deadline (DD/MM/YYYY)"
+            android:padding="12dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Add Employee Button -->
+    <Button
+        android:id="@+id/btnAddEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD EMPLOYEE"
+        android:backgroundTint="@color/appcolor"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Selected Employees Text -->
+    <TextView
+        android:id="@+id/tvSelectedEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Employees:"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:backgroundTint="@color/appcolor"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+</LinearLayout>

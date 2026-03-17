@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Employee_Gamification"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.employee_gamification.CEOLeaderboardActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name="com.example.employee_gamification.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.EMProjectListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.EMNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.EMLeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.CeoHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.CeoprojectdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.EmployeeDashboard"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.HrActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.ProjectListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.HRAddTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.HrLeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.HRSubmissionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.CreateProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.ProjectDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.employee_gamification.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

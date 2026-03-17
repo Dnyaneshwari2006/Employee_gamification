@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="4dp">
+
+    <!-- Header Project Name -->
+    <TextView
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brief Digital Agency Landing Page"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Blue strip (decorative) -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="#4A90E2"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Deadline badge -->
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deadline: Today 10pm"
+        android:textColor="#4A4A4A"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:background="@drawable/deadline_background"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Description / Created By -->
+    <TextView
+        android:id="@+id/createdBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created by: Langoor"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Project Status -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: 70% Completed"
+        android:textColor="#4A90E2"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp" />
+
+
+    <!-- Project Tasks Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task History"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- RecyclerView with Correct Layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

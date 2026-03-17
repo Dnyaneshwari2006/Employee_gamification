@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hr_dashboard"
+        android:title="HR Dashboard"
+        android:icon="@android:drawable/ic_menu_view"
+        android:paddingTop="24dp"/>
+    <item
+        android:id="@+id/hr_leaderboard"
+        android:title="LeaderBoard"
+        android:icon="@drawable/ic_leaderboard" />
+
+    <item
+        android:id="@+id/hr_adddproject"
+        android:title="Add new project"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item
+        android:id="@+id/hr_addemployee"
+        android:title="Emplyee Registration"
+        android:icon="@drawable/ic_person1" />
+
+    <item
+        android:id="@+id/hr_addtask"
+        android:title="Add new Task"
+        android:icon="@drawable/ic_settings" />
+
+    <item
+        android:id="@+id/hr_notification"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications" />
+
+    <item
+        android:id="@+id/hr_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>

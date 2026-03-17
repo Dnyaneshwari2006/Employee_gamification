@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Task Input -->
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:gravity="top|start"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:overScrollMode="always"/>
+
+    <!-- Deadline Input (Click to Open Date Picker) -->
+    <EditText
+        android:id="@+id/deadlineInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Set Deadline"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/sendTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:background="@color/primaryColor"
+        android:textColor="@android:color/white" />
+</LinearLayout>

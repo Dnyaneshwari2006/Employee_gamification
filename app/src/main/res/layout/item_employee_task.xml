@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/employeeNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="#2C3E50"
+        android:textStyle="bold"
+        android:paddingStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/circle_button_purple"
+        android:contentDescription="Add"
+        android:layout_marginStart="10dp"
+        android:elevation="4dp"
+        android:tint="@android:color/white"/>
+
+</LinearLayout>

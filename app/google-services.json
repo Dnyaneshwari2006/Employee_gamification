@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "407348562992",
+    "project_id": "employee-gamification-1421c",
+    "storage_bucket": "employee-gamification-1421c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407348562992:android:79aba35e350e5b35fb31f5",
+        "android_client_info": {
+          "package_name": "com.yourpackage.name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6pBCjIlh5Fj1LZtnxKb9W_7p26A7uyN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407348562992:android:e648309818292b84fb31f5",
+        "android_client_info": {
+          "package_name": "com.yourpackage.name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6pBCjIlh5Fj1LZtnxKb9W_7p26A7uyN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407348562992:android:ddd6b6aa1af0f259fb31f5",
+        "android_client_info": {
+          "package_name": "com.yourpackage.name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6pBCjIlh5Fj1LZtnxKb9W_7p26A7uyN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

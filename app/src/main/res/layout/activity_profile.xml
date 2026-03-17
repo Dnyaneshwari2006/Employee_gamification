@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context="com.example.employee_gamification.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="24dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/baseline_account_circle_24"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="Profile Picture"
+                    android:background="@drawable/profile_circle_bg"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap image to change profile photo"
+                    android:textColor="#777777"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: John Doe"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:background="@drawable/styled_textview"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="2dp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: john@example.com"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:background="@drawable/styled_textview"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="2dp" />
+
+                <TextView
+                    android:id="@+id/tvRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Role: Developer"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:background="@drawable/styled_textview"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="2dp" />
+
+                <TextView
+                    android:id="@+id/tvPoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Points: 200"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:padding="12dp"
+                    android:background="@drawable/styled_textview"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="2dp" />
+
+                <EditText
+                    android:id="@+id/etNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:padding="14dp"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Password"
+                    android:textSize="16sp"
+                    android:backgroundTint="#6200EE"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rounded_button" />
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textSize="16sp"
+                    android:backgroundTint="#B00020"
+                    android:textColor="#FFFFFF"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

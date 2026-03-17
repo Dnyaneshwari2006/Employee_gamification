@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/replyPopupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_popup_bg"
+    android:elevation="8dp">
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/editTextReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your reply..."
+        android:padding="14dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- First Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/btnImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_button_bg"
+            android:src="@drawable/ic_image"
+            android:scaleType="centerInside"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnPdf"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_button_bg"
+            android:src="@drawable/ic_file"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <!-- Second Row of Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnZip"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_button_bg"
+            android:src="@drawable/ic_calendar"
+            android:scaleType="centerInside"
+            android:padding="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnDoneImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_button_bg"
+            android:src="@drawable/ic_check"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectedFileNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No file selected"
+        android:textColor="#555555"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Task"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/appcolor" />
+</LinearLayout>
